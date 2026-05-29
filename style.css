@@ -1,0 +1,31 @@
+/* Reset básico e uso de unidades relativas (rem) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Facilita o redimensionamento pelo usuário */
+    line-height: 1.6;
+    color: #222222; /* Alto contraste com o fundo */
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* Esconde o link de salto, mas o exibe quando ele recebe foco via teclado (Tab) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Garante que usuários de teclado saibam onde estão navegando */
+a:focus, button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
